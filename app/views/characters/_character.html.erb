@@ -1,0 +1,23 @@
+<p>
+  <strong>Character: </strong>
+  <%= character.name %>
+</p>
+<p>
+  <strong>Title: </strong>
+  <%= character.title%>
+</p>
+<p>
+  <strong>Culture: </strong>
+  <%= character.culture %>
+</p>
+<p>
+  <strong>House: </strong>
+  <%= character.house%>
+</p>
+
+<p>
+  <%= link_to 'Destroy Character',
+  [character.house, character],
+              method: :delete,
+              data: {confirm: 'Are you sure?'}%>
+</p>

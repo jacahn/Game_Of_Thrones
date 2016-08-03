@@ -1,0 +1,37 @@
+<%= form_for ([@house, @house.characters.build]) do |f| %>
+  <p>
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :title %><br>
+    <%= f.text_field :title %>
+  </p>
+  <p>
+    <%= f.label :culture %><br>
+    <%= f.text_field :culture %>
+  </p>
+  <p>
+    <%= f.label :house %><br>
+    <%= f.text_field :house %>
+  </p>
+  <p>
+    <%= f.submit%>
+  </p>
+<% end %>
+<p>
+  <strong>Character: </strong>
+  <%= character.name %>
+</p>
+<p>
+  <strong>Title: </strong>
+  <%= character.title%>
+</p>
+<p>
+  <strong>Culture: </strong>
+  <%= character.culture %>
+</p>
+<p>
+  <strong>House: </strong>
+  <%= character.house%>
+</p>

@@ -1,0 +1,22 @@
+<p>
+  <strong>Name: </strong>
+  <%= @house.name%>
+</p>
+<p>
+  <strong>Word: </strong>
+  <%= @house.word %>
+</p>
+<p>
+  <strong>Allegiance: </strong>
+  <%= @house.allegiance %>
+</p>
+
+<h2>Characters</h2>
+<%= render @house.characters %>
+
+<h2>Add a character: </h2>
+<%= render 'characters/form'%>
+
+<%= link_to 'Edit', edit_house_path(@house)%>
+<%= link_to 'Back', house_path %>
+<%= link_to "Delete", house_path(@house), method: :delete %>

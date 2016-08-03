@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyText
+  title: MyText
+  culture: MyText
+  house: one
+
+two:
+  name: MyText
+  title: MyText
+  culture: MyText
+  house: two
